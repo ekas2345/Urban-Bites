@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanBites | MasterChef Edition</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase" href="#">
+                <i class="fas fa-crown text-gold me-2"></i>UrbanBites
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto small fw-bold letter-spacing">
+                    <li class="nav-item"><a class="nav-link active" href="#home">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">OUR STORY</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chefs">THE MASTERS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="nav-link btn btn-gold text-dark px-4 rounded-pill" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="overlay"></div>
+                    <img src="assets/images/hero-burger.jpg" class="d-block w-100 vh-100-custom" alt="Gourmet Burger">
+                    <div class="carousel-caption">
+                        <h5 class="text-gold text-uppercase letter-spacing mb-3">The Future of Taste</h5>
+                        <h1 class="display-2 font-serif mb-4">Culinary Excellence.</h1>
+                        <p class="lead mb-5 text-white">Curated by the world's most renowned chefs.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="assets/images/kitchen.jpg" class="d-block w-100 vh-100-custom" alt="Kitchen">
+                    <div class="carousel-caption">
+                        <h5 class="text-gold text-uppercase letter-spacing mb-3">Farm to Table</h5>
+                        <h1 class="display-2 font-serif mb-4">Art on a Plate.</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="overlay"></div>
+                    <img src="assets/images/delivery.jpg" class="d-block w-100 vh-100-custom" alt="Delivery">
+                    <div class="carousel-caption">
+                        <h5 class="text-gold text-uppercase letter-spacing mb-3">Square One Exclusive</h5>
+                        <h1 class="display-2 font-serif mb-4">Fast. Fresh. Flawless.</h1>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="bg-card-dark p-5 rounded-4 shadow-lg text-center floating-container">
+                        <h4 class="text-gold letter-spacing">THE VISION</h4>
+                        <h2 class="font-serif display-5 mb-4 text-black">A Symphony of Flavors</h2>
+                        <p class="text-silver lead mb-4">
+                            UrbanBites is a culinary revolution founded by <span class="text-gold fw-bold">Ekasjot Singh & Vineet Kumar</span>. We have partnered with the world's culinary elite to bring fine dining techniques to accessible street food in Brampton.
+                        </p>
+                        <img src="assets/images/about.jpg" class="img-fluid rounded-3 shadow mt-3 mb-4" style="max-height: 400px; object-fit: cover; width: 100%;" alt="Interior">
+                        <br>
+                        <button class="btn btn-outline-gold rounded-pill px-5 py-2 mt-3">Read Our Story</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="feature-box p-4 rounded-4 text-center">
+                    <i class="fas fa-utensils fa-3x text-gold mb-3"></i>
+                    <h3 class="font-serif text-black">Michelin Standards</h3>
+                    <p class="text-silver">Every burger is inspected for perfection before it leaves the pass.</p>
+                    <button class="btn btn-link text-gold text-decoration-none">Learn How</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box p-4 rounded-4 text-center active-box">
+                    <i class="fas fa-bolt fa-3x text-gold mb-3"></i>
+                    <h3 class="font-serif text-black">Hyper-Speed</h3>
+                    <p class="text-silver">From our grill to your door in Brampton in under 25 minutes.</p>
+                    <button class="btn btn-link text-gold text-decoration-none">Check Zone</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="feature-box p-4 rounded-4 text-center">
+                    <i class="fas fa-leaf fa-3x text-gold mb-3"></i>
+                    <h3 class="font-serif text-black">Sustainable</h3>
+                    <p class="text-silver">We use 100% biodegradable packaging and locally sourced produce.</p>
+                    <button class="btn btn-link text-gold text-decoration-none">Our Planet</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container py-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="p-4">
+                    <h5 class="text-gold">SIGNATURE DISH</h5>
+                    <h2 class="font-serif display-6 text-black">The "Bombay Bad Boy"</h2>
+                    <p class="text-silver">Chef Vikas Khanna's creation. A spicy potato patty, pomegranate reduction, and mint chutney on a charcoal bun.</p>
+                    <button class="btn btn-gold rounded-pill text-dark px-4">Order Now</button>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="assets/images/hero-burger.jpg" class="img-fluid rounded-4 shadow-lg hover-scale" alt="Burger">
+            </div>
+        </div>
+        <div class="row align-items-center">
+             <div class="col-lg-6 order-lg-2">
+                <div class="p-4">
+                    <h5 class="text-gold">SIDE KICK</h5>
+                    <h2 class="font-serif display-6 text-black">Hell's Kitchen Fries</h2>
+                    <p class="text-silver">Chef Ramsay's signature fries. Triple cooked, dusted with paprika and served with a side of truffle aioli.</p>
+                    <button class="btn btn-gold rounded-pill text-dark px-4">Add Side</button>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="assets/images/fries.jpg" class="img-fluid rounded-4 shadow-lg hover-scale" alt="Fries">
+            </div>
+        </div>
+    </section>
+
+    <section id="chefs" class="bg-gradient-dark py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="text-gold letter-spacing">THE LEGENDS</h5>
+                <h2 class="font-serif text-black">Meet The Culinary Board</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="img-container mx-auto mb-3">
+                            <img src="assets/images/member1.jpg" class="img-fluid rounded-circle" alt="Vikas Khanna">
+                        </div>
+                        <h4 class="text-black font-serif">Vikas Khanna</h4>
+                        <p class="text-gold small text-uppercase">Flavor Architect</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="img-container mx-auto mb-3">
+                            <img src="assets/images/member2.jpg" class="img-fluid rounded-circle" alt="Ranveer Brar">
+                        </div>
+                        <h4 class="text-black font-serif">Ranveer Brar</h4>
+                        <p class="text-gold small text-uppercase">Culinary Artist</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="img-container mx-auto mb-3">
+                            <img src="assets/images/member3.jpg" class="img-fluid rounded-circle" alt="Sanjeev Kapoor">
+                        </div>
+                        <h4 class="text-black font-serif">Sanjeev Kapoor</h4>
+                        <p class="text-gold small text-uppercase">Menu Curator</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="team-card text-center">
+                        <div class="img-container mx-auto mb-3">
+                            <img src="assets/images/member4.jpg" class="img-fluid rounded-circle" alt="Gordon Ramsay">
+                        </div>
+                        <h4 class="text-black font-serif">Gordon Ramsay</h4>
+                        <p class="text-gold small text-uppercase">Executive Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="container py-5">
+        <h2 class="text-center font-serif text-black mb-5">Frequently Asked Questions</h2>
+        <div class="accordion accordion-flush" id="faqAccordion">
+            <div class="accordion-item bg-transparent mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-card-dark text-gold rounded-3 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                        Who are the founders?
+                    </button>
+                </h2>
+                <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-silver bg-card-dark rounded-bottom">
+                        UrbanBites was founded by Ekasjot Singh and Vineet Kumar with a vision to redefine fast food in Canada.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-card-dark text-gold rounded-3 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                        Do I need a reservation for delivery?
+                    </button>
+                </h2>
+                <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-silver bg-card-dark rounded-bottom">
+                        No reservation needed. Order online and our priority fleet will deliver to Square One area within minutes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-card-dark text-gold rounded-3 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                        Are the ingredients fresh?
+                    </button>
+                </h2>
+                <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-silver bg-card-dark rounded-bottom">
+                        We don't own a freezer. Everything is sourced daily from local Ontario farms.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent mb-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-card-dark text-gold rounded-3 shadow-sm" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                        Do you cater private events?
+                    </button>
+                </h2>
+                <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                    <div class="accordion-body text-silver bg-card-dark rounded-bottom">
+                        Yes. You can book Chef Ranveer Brar's team for private events in the GTA.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="container py-5 mb-5">
+        <div class="row g-5">
+            <div class="col-md-6">
+                <div class="bg-card-dark p-4 rounded shadow">
+                    <h3 class="mb-3 text-gold">Contact Us</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-gold">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-gold">Email</label>
+                            <input type="email" class="form-control" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-gold">Message</label>
+                            <textarea class="form-control" rows="3" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-gold w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="bg-card-dark p-4 rounded h-100 d-flex flex-column justify-content-center">
+                    <h2 class="mb-4 text-black">Get in Touch</h2>
+                    <p class="mb-4">We would love to hear from you. Visit us at our flagship location.</p>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-map-marker-alt fa-2x text-gold me-3"></i>
+                        <div>
+                            <h5 class="mb-0 text-black">Location</h5>
+                            <p class="mb-0">Square One, Brampton, ON</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fas fa-phone fa-2x text-gold me-3"></i>
+                        <div>
+                            <h5 class="mb-0 text-black">Phone</h5>
+                            <p class="mb-0">+1 (905) 555-0199</p>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-envelope fa-2x text-gold me-3"></i>
+                        <div>
+                            <h5 class="mb-0 text-black">Email</h5>
+                            <p class="mb-0">info@urbanbites.ca</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-center text-secondary py-4 border-top border-dark">
+        <div class="container">
+            <p class="mb-0 small letter-spacing">&copy; 2025 URBANBITES GROUP.</p>
+            <p class="small text-muted mt-2">Founded by <span class="text-gold">Ekasjot Singh</span> & <span class="text-gold">Vineet Kumar</span>.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
